@@ -55,9 +55,9 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
         "$ALPINE_GLIBC_I18N_PACKAGE_FILENAME"
 
 ENV JAVA_VERSION=8 \
-    JAVA_UPDATE=202 \
-    JAVA_BUILD=08 \
-    JAVA_PATH=1961070e4c9b4e26a04e7f5a083f551e \
+    JAVA_UPDATE=231 \
+    JAVA_BUILD=11 \
+    JAVA_PATH=5b13a193868b4bf28bcb45c792fce896 \
     JAVA_HOME="/usr/lib/jvm/default-jvm"
 
 RUN apk add --no-cache --virtual=build-dependencies wget ca-certificates unzip && \

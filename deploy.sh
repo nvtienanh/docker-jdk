@@ -21,7 +21,6 @@ deploy() {
     IMAGE=nvtienanh/oracle-jdk:$IMAGE_TAG
     docker build \
      -t $IMAGE \
-     --build-arg IMAGE_TAG=$IMAGE_TAG \
      --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
      --build-arg VCS_REF=`git rev-parse --short HEAD` .
     docker push $IMAGE

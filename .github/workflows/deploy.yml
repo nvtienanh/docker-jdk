@@ -3,11 +3,11 @@ name: CI
 on: 
   push:
     branches:
-      - master
+      - 1.8-alpine3.9
 
 jobs:
 
-  build:
+  deploy:
 
     runs-on: ubuntu-latest
 

@@ -34,7 +34,7 @@ RUN JAVA_VERSION=8 && \
     ln -s "java-${JAVA_VERSION}-oracle" "$JAVA_HOME" && \
     ln -s "$JAVA_HOME/bin/"* "/usr/bin/" && \
     unzip -jo -d "$JAVA_HOME/jre/lib/security" "jce_policy-${JAVA_VERSION}.zip" && \    
-    rm -rf "$JAVA_HOME/"*src.zip \         
+    rm -rf "$JAVA_HOME/"*src.zip &&\         
     apt-get -y autoremove wget unzip && \
     apt-get -y clean && \
     rm -rf "/tmp/"* \
